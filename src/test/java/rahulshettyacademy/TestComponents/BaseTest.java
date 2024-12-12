@@ -36,7 +36,8 @@ public class BaseTest {
 		FileInputStream fin = new FileInputStream(System.getProperty("user.dir")+"//src//test//java//rahulshettyacademy//resources//GlobalData.properties");
 		prop.load(fin);
 		String browserName = System.getProperty("browser")!= null ? System.getProperty("browser") : prop.getProperty("browser");
-		 
+
+		//Invoke Chrome Browser		 
 		
 		if(browserName.contains("chrome")) {
 			
